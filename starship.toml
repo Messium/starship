@@ -1,0 +1,72 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[](bold blue)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[directory]
+truncation_length = 255
+# truncation_symbol = '…/'
+truncate_to_repo = false
+use_logical_path = false
+read_only = '🔒'
+
+# [os]
+# format = "[$symbol](bold white)"
+# disabled = false
+
+[container]
+symbol = '⬢'	#The symbol shown, when inside a container
+style = 'bold red dimmed'	#The style for the module.
+format = '[$symbol \[$name\]]($style)' # The format for the module.
+disabled = false #	Disables the container module.
+
+[hostname]
+ssh_only = true
+format = "[$hostname](blue bold)"
+disabled = false
+
+# [username]
+# user_prefix = -
+# style_user = 'white bold'
+# style_root = 'black bold'
+# format = 'user: [$user]($style) '
+# disabled = false
+# show_always = true
+# aliases = { "corpuser034g" = "matchai" }
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
